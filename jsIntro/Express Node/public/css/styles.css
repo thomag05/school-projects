@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Dropdown Menu */
+.menu-area a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background: #eff2ff;
+  height: 60px;
+  font-family: Poppins;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.menu-area a:hover {
+  background: #f78764;
+  color: #fff;
+}
+.menu-area ul {
+  list-style: none;
+  display: flex;
+}
+.menu-area li {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.menu-area li:hover .dropdown-1 > li {
+  display: block;
+  top: 0;
+}
+.dropdown-1 li {
+  display: none;
+  position: relative;
+}
+.dropdown-1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: solid 1px black;
+}
+
+.dropdown-1 li:hover .dropdown-2 li {
+  display: block;
+}
+.dropdown-2 li {
+  display: none;
+}
+.dropdown-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+}
+
+.banner-area {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/01-technology_1421446100.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(80vh - 60px);
+}
+.banner-area h1 {
+  color: #fff;
+  font-size: 100px;
+  font-family: poppins;
+  letter-spacing: 2px;
+}
+
+.about-site {
+  display: flex;
+  height: calc(80vh);
+  align-items: center;
+  border: solid 1px #f78764;
+  background-color: #001b29;
+  color: white;
+  flex-flow: column;
+}
+/* Sosiale Medier */
+.information {
+  display: flex;
+  height: calc(50vh);
+  align-items: center;
+  background-color: #001b29;
+  color: white;
+  flex-flow: column;
+  padding-top: 25px;
+}
+.parentSos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: auto;
+  background-color: #001b29;
+  border-top: solid 5px white;
+}
+.Sos1 {
+  order: 1;
+  background-color: inherit;
+  width: calc(50vw);
+  border-right: solid 1px white;
+  padding: 10px;
+}
+.Sos2 {
+  order: 2;
+  background-color: inherit;
+  width: calc(50vw);
+  border-left: solid 1px white;
+  padding: 10px;
+}
+#SosI {
+  font-size: 150%;
+  color: white;
+  text-align: center;
+}
+.parentSos h1 {
+  color: white;
+  text-align: center;
+}
+.Sos3 {
+  order: 1;
+  background-color: inherit;
+  width: calc(60vw);
+  padding: 10px;
+}
+#SosII {
+  font-size: 150%;
+  color: white;
+  padding: 10px;
+}
+#SosH {
+  color: white;
+  text-align: start;
+}
+.SosBilde {
+  width: calc(40vw);
+  order: 2;
+  background-image: url(./Pictures/ocial-Media.jpg);
+}
+/* MEDIA QUERIES */
+@media (min-width: 1500px) {
+  .parentSos {
+    height: calc(50vh);
+  }
+}
+@media (max-width: 800px) {
+  .parentSos {
+    flex-flow: column wrap;
+  }
+  .Sos1 {
+    width: 100%;
+  }
+  .Sos2 {
+    width: 100%;
+  }
+  .Sos3 {
+    width: 100%;
+  }
+}
+.pa {
+  text-align: center;
+  margin: 25px;
+}
+.about-bildehist {
+  display: flex;
+  height: calc(100vh);
+  align-items: center;
+  border: solid 1px #f78764;
+  background-color: #001b29;
+  color: white;
+  flex-flow: column;
+}

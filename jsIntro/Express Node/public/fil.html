@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="overskrift">test.exe</h1>
+
+    <p>
+      1) Lag en fil som heter jyy.html i public mappen<br />
+      2) Lag et avsnitt med id 'avsnitt' <br />
+      3) Lag en script-tag og deretter en variable som holder på avsnittet<br />
+      4) Lag en funkson som legger inn tekst i avsnittet. <br />
+      5) Kjør funksonen i konsollen og se at det virker. <br />
+      6) Lag en knapp i HTML-dokuentet og knytt denne til en variabel. <br />
+      7) Knytt funksonen til knappen. <br />
+    </p>
+
+    <button id="gul">Yellow</button>
+    <button id="rosa">Pink</button>
+    <button id="green">Green</button>
+
+    <script>
+      let overskriften = document.getElementById("overskrift");
+
+      function skiftOverskrift() {
+        overskriften.innerHTML = "Dette er et html/js-dokument";
+      }
+
+      let element = document.createElement("h1");
+      element.innerHTML = "Enda en overskrift";
+      document.body.appendChild(element);
+
+      //   document.body.style.backgroundColor = "yellow";
+
+      let btnGul = document.getElementById("gul");
+      let btnRosa = document.getElementById("rosa");
+      let btnGreen = document.getElementById("green");
+
+      function gul() {
+        document.body.style.backgroundColor = "yellow";
+      }
+      function rosa() {
+        document.body.style.backgroundColor = "pink";
+      }
+      function graun() {
+        document.body.style.backgroundColor = "green";
+      }
+
+      btnGul.onclick = gul;
+      btnRosa.onclick = rosa;
+      btnGreen.onclick = graun;
+
+      // alert('Denne bruker vi strengt tatt nesten aldri')
+      // let input = prompt('Er du over 18?')
+    </script>
+  </body>
+</html>
